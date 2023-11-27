@@ -1,0 +1,12 @@
+.line:not(:last-child) {
+  border-right: 2px solid var(--color-gray);
+  width: calc(100% / 16);
+  min-width: calc(100% / 16);
+  height: 0px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.line.active {
+  height: 100%;
+}

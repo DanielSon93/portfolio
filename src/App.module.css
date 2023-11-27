@@ -1,0 +1,26 @@
+.mainWrap {
+  width: 100%;
+}
+
+.resultWrap {
+  width: 100%;
+}
+
+.top {
+  position: fixed;
+  right: 5%;
+  bottom: -10%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 1s;
+  z-index: 100;
+  color: var(--color-darkgray);
+}
+
+.top.active {
+  bottom: 10%;
+}
+
+.top:hover {
+  transform: scale(1.3);
+}

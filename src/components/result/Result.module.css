@@ -1,0 +1,43 @@
+.results {
+  font-family: 'Noto Sans Thai', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-lightgray);
+}
+
+.result {
+  width: 100%;
+  height: calc(100% / 5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.result.active {
+  pointer-events: none;
+}
+
+.result:not(:last-child) {
+  border-bottom: 2px solid var(--color-darkgray);
+}
+
+.title {
+  padding: 0.8rem 0 0 1rem;
+  font-size: 8rem;
+  color: var(--color-darkgray);
+  background-color: var(--color-lightgray);
+  z-index: 10;
+}
+
+.titleInfo {
+  color: var(--color-darkgray);
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  transform: translateX(-500%);
+  transition: all 1s;
+}
+
+.result:hover>.titleInfo {
+  transform: translateX(0);
+}

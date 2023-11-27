@@ -1,0 +1,66 @@
+{
+  "PORTFOLIO": {
+    "fullNameKor": "포트폴리오",
+    "fullName": "Portfolio",
+    "development": "Front-End / Web Development",
+    "period": "2023. 11.",
+    "periodFull": "2023. 11. 20 ~ 2023. 11. 29",
+    "imgUrl": [
+      "/img/portfolio/portfolio-1.png", 
+      "/img/portfolio/portfolio-2.png",
+      "/img/portfolio/portfolio-3.png",
+      "/img/portfolio/portfolio-4.png",
+      "/img/portfolio/portfolio-5.png"
+    ]
+  },
+  "KOREAN AIR": {
+    "fullNameKor": "대한항공",
+    "fullName": "Korean Air",
+    "development": "Front-End / Web Development",
+    "period": "2023. 10.",
+    "periodFull": "2023. 10. 02  ~ 2023. 10. 13",
+    "imgUrl": [
+      "/img/koreanAir/koreanAir-1.png", 
+      "/img/koreanAir/koreanAir-2.png",
+      "/img/koreanAir/koreanAir-3.png",
+      "/img/koreanAir/koreanAir-4.png",
+      "/img/koreanAir/koreanAir-5.png"
+    ]
+  },
+  "HANWHA SOLUTIONS": {
+    "fullNameKor": "한화솔루션 케미칼 부문",
+    "fullName": "Hanwha Solutions Chemical Divison",
+    "development": "Front-End / Web Development",
+    "period": "2023. 09.",
+    "periodFull": "2023. 09. 23 ~ 2023. 09. 30",
+    "imgUrl": [
+      "/img/hanwha/hanwha-1.png", 
+      "/img/hanwha/hanwha-2.png",
+      "/img/hanwha/hanwha-3.png",
+      "/img/hanwha/hanwha-4.png",
+      "/img/hanwha/hanwha-5.png"
+    ]
+  },
+  "FDS-ML": {
+    "fullNameKor": "이상거래탐지 - 머신러닝",
+    "fullName": "Fraud Detection System - Machine Learning",
+    "development": "Front-End / Web Development",
+    "period": "2023. 01.",
+    "periodFull": "2023. 01. 10 ~ 2023. 04. 21",
+    "imgUrl": [
+      "/img/fdsML/fdsML-1.png", 
+      "/img/fdsML/fdsML-2.png"
+    ]
+  },
+  "N-FDS": {
+    "fullNameKor": "이상거래탐지 - 농협",
+    "fullName": "Fraud Detection System - NongHyup",
+    "development": "Front-End / Web Development",
+    "period": "2022. 06.",
+    "periodFull": "2022. 06. 01 ~ 2023. 08. 05",
+    "imgUrl": [
+      "/img/fdsNH/fdsNH-1.png",
+      "/img/fdsNH/fdsNH-2.png"
+    ]
+  }
+}

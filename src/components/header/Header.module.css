@@ -1,0 +1,134 @@
+.header {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 1000px;
+  height: 150px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  transition: max-width 500ms;
+  transform: translateY(0);
+  transition: all 1s;
+}
+
+.header.resultActive {
+  transform: translateY(-500px);
+}
+
+.header.active {
+  max-width: 1680px;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms;
+}
+
+.logo>img {
+  width: 40px;
+  height: 60px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo.active {
+  margin-top: -2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.about {
+  margin-right: 5.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  transition: all 1s;
+}
+
+.about>li {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--color-darkgray);
+  line-height: 1.4rem;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.about>li:hover {
+  margin-right: 0.9rem;
+  color: #000000;
+}
+
+.about.active>li:nth-child(1) {
+  transform: translate(-316%, 50%);
+}
+
+.about.active>li:nth-child(2) {
+  transform: translate(-77%, -55%);
+}
+
+.about.active>li:nth-child(3) {
+  transform: translate(0, -150%);
+}
+
+.darkMode {
+  font-size: 2.5rem;
+  color: var(--color-darkgray);
+  margin-right: 3.7rem;
+  cursor: pointer;
+  transition: all 1s;
+  transform: rotate(180deg);
+}
+
+.darkMode.darkActive {
+  transform: rotate(360deg);
+}
+
+.darkMode.active {
+  margin-top: -2rem;
+}
+
+.menu {
+  position: relative;
+  width: 60px;
+  height: 100%;
+  cursor: pointer;
+  transition: all 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  color: var(--color-darkgray);
+}
+
+.menu.active {
+  margin-top: -2rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactMe {
+  font-size: 2rem;
+}
