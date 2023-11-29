@@ -5,10 +5,17 @@
     "development": "Front-End / Web Development",
     "period": "2023. 11.",
     "periodFull": "2023. 11. 20 ~ 2023. 11. 29",
+    "productionPurpose": "포트폴리오 소개",
+    "explanation": "현재까지 제작한 포트폴리오 및 사내 솔루션 소개를 위해 제작한 사이트입니다.\n\n이 프로젝트에서는 ContextAPI를 활용하여 DarkMode 기능을 구현해 전역 상태를 쉽게 변경할 수 있도록 했습니다.\n그리고 Scroll 방식 대신에 IntersectionObserver를 도입하여 성능 향상에 주력했습니다.\n이로인해 이전과는 다르게 효율적인 방법으로 특정 위치에서의 이벤트를 처리할 수 있었습니다.\n또한, 이전 프로젝트에서는 경험해보지 못한 애니메이션들을 도입하여 웹사이트를 더 생동감 있게 꾸며보았습니다.\n이런 다양한 기술적인 도전을 통해 색다른 경험을 쌓을 수 있었습니다.",
+    "link": "현재 보고 계신 웹사이트입니다.",
+    "languages": [
+      "HTML",
+      "PostCSS",
+      "Javascript",
+      "React"
+    ],
     "imgUrl": [
-      "/img/portfolio/portfolio-1.png", 
-      "/img/portfolio/portfolio-2.png",
-      "/img/portfolio/portfolio-3.png",
+      "/img/portfolio/portfolio-1.png",
       "/img/portfolio/portfolio-4.png",
       "/img/portfolio/portfolio-5.png"
     ]
@@ -19,12 +26,19 @@
     "development": "Front-End / Web Development",
     "period": "2023. 10.",
     "periodFull": "2023. 10. 02  ~ 2023. 10. 13",
+    "productionPurpose": "포트폴리오 제작을 위한 클론코딩",
+    "explanation": "처음으로 React를 도입하여 제작한 사이트입니다.\n\n컴포넌트를 분리하여 재사용이 가능한 부분에 있어서는 최대한 재사용이 가능하도록 개발을 진행하였고, 상태값을 주고받고 처리하는 개념에 익숙해지기 위해노력하였습니다.\nReact 내장 hook들인 useEffect, useCallback, useState 등을 적재적소에 활용하려고 시도하였고, 이를 통해 코드를 더욱 효율적으로 작성하는 방법을 익혔습니다.\n\nHTTP 상태 코드에 기반한 자동 오류 처리를 지원하고, 더 편리한 방법으로 오류를 다룰 수 있는 axios 라이브러리 및 슬라이드로 많이 사용되는 swiper도 사용해보았습니다. ",
+    "link": "www.testLink.com",
+    "languages": [
+      "HTML",
+      "PostCSS",
+      "Javascript",
+      "React"
+    ],
     "imgUrl": [
-      "/img/koreanAir/koreanAir-1.png", 
+      "/img/koreanAir/koreanAir-1.png",
       "/img/koreanAir/koreanAir-2.png",
-      "/img/koreanAir/koreanAir-3.png",
-      "/img/koreanAir/koreanAir-4.png",
-      "/img/koreanAir/koreanAir-5.png"
+      "/img/koreanAir/koreanAir-3.png"
     ]
   },
   "HANWHA SOLUTIONS": {
@@ -33,8 +47,17 @@
     "development": "Front-End / Web Development",
     "period": "2023. 09.",
     "periodFull": "2023. 09. 23 ~ 2023. 09. 30",
+    "productionPurpose": "포트폴리오 제작을 위한 클론코딩",
+    "explanation": "프론트엔드로 발돋움 하기위한 첫 개인 프로젝트였습니다.\n\n메인 화면의 슬라이드를 제외하고는 모두 순수 HTML, CSS, JavaScript를 활용하여 개발을 진행하였습니다.\n이를 통해 프론트엔드의 기초를 이루는 핵심 언어에 대한 더 깊은 이해와 익숙함을 쌓아가려 노력했습니다.\n이 프로젝트를 진행하면서 프론트엔드의 CS 지식이 부족해 이벤트 버블링과 클로저 개념을 활용하지 못했던 점이 아쉬웠기에 다음 프로젝트에서는 이러한 개념들을 활용하여 더 나은 코드를 작성하고 싶습니다.",
+    "link": "www.testLink.com",
+    "languages": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
     "imgUrl": [
-      "/img/hanwha/hanwha-1.png", 
+      "/img/hanwha/hanwha-1-1.png",
+      "/img/hanwha/hanwha-1.png",
       "/img/hanwha/hanwha-2.png",
       "/img/hanwha/hanwha-3.png",
       "/img/hanwha/hanwha-4.png",
@@ -47,20 +70,44 @@
     "development": "Front-End / Web Development",
     "period": "2023. 01.",
     "periodFull": "2023. 01. 10 ~ 2023. 04. 21",
+    "productionPurpose": "이상거래탐지 사내 솔루션 - Django Web",
+    "explanation": "입출금 내역과 거래 정보 등의 데이터를 바탕으로 패턴을 파악해 이상 거래를 탐지하고 거래를 중단시키는 시스템입니다.\n\n머신러닝이 특정 파일을 통해 학습 후 모델을 생성해 낼 수 있도록 파일에 해당하는 다중(multiple) 파일 업로드/다운로드 기능을 개발하였습니다.\n다른 input type과는 달리 file 타입은 value 값을 쉽게 수정할 수 없다는 것을 알게 되었고, 이를 DataTransfer 객체를 사용해 해결하였습니다.",
+    "link": "내부 보안 정책에 따라 별도의 링크는 없습니다.",
+    "languages": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "jQuery",
+      "Django",
+      "Python"
+    ],
     "imgUrl": [
-      "/img/fdsML/fdsML-1.png", 
+      "/img/fdsML/fdsML-1.png",
       "/img/fdsML/fdsML-2.png"
     ]
   },
   "N-FDS": {
-    "fullNameKor": "이상거래탐지 - 농협",
-    "fullName": "Fraud Detection System - NongHyup",
+    "fullNameKor": "이상거래탐지",
+    "fullName": "Fraud Detection System",
     "development": "Front-End / Web Development",
     "period": "2022. 06.",
     "periodFull": "2022. 06. 01 ~ 2023. 08. 05",
+    "productionPurpose": "이상거래탐지 사내 솔루션 - Spring Web",
+    "explanation": "입출금 내역과 거래 정보 등의 데이터를 바탕으로 패턴을 파악해 이상거래를 탐지하고 거래를 중단시키는 시스템입니다.\n\n기존 FDS의 차세대 프로젝트로서 Apache Storm, Redis, Elasticsearch 등 다양한 솔루션이 도입되었습니다.\n이를 통해 여러가지 데이터 구조에 익숙해졌고 편하게 다룰 수 있게 되었습니다.\n주로 담당한 기술 스텍은 Redis로 특정 IP를 가려내는 작업 및 사용자의 프로파일 데이터를 처리하는 부분을 담당하였습니다.\nCluster를 통한 이중화 작업 및 TPS 테스트도 따로 진행하여 안정성 및 성능을 모두 챙기려고 하였습니다.",
+    "link": "내부 보안 정책에 따라 별도의 링크는 없습니다.",
+    "languages": [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Javascript",
+      "jQuery",
+      "Redis",
+      "Java",
+      "Spring"
+    ],
     "imgUrl": [
-      "/img/fdsNH/fdsNH-1.png",
-      "/img/fdsNH/fdsNH-2.png"
+      "/img/fds/nfds-1.png",
+      "/img/fds/nfds-2.png"
     ]
   }
 }

@@ -1,0 +1,43 @@
+.contactCard {
+  position: relative;
+  width: 320px;
+  height: 150px;
+  border-radius: 1rem;
+  background-color: var(--color-gray);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactCard::after {
+  content: '';
+  position: absolute;
+  left: 27%;
+  top: -5%;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  background-color: var(--color-gray);
+  transition: all 1s;
+}
+
+.contactCard.active::after {
+  left: 58%;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.info {
+  line-height: 1.8rem;
+}
+
+.info>li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}

@@ -8,14 +8,24 @@ import Ability from './components/ability/Ability';
 import Result from './components/result/Result';
 import { DarkModeProvider } from './context/DarkModeContext';
 import { LuArrowUpFromDot } from 'react-icons/lu';
+import AnimatedCursor from "react-animated-cursor"
 
-function App() {
+export default function App() {
   const [isLoad, setIsLoad] = useState([false, false]);
-  const { isIntersect, handleIntersect } = useContext(ObserveContext);
   const [isResult, setIsResult] = useState(false);
-
+  const [clickIdx, setClickIdx] = useState(null);
+  const { isIntersect, handleIntersect } = useContext(ObserveContext);
   const main = useRef(null);
   const result = useRef(null);
+
+  const handleResultClick = (idx) => {
+    setClickIdx(idx);
+    if (idx === null) {
+      document.body.classList.remove('popupActive');
+    } else {
+      document.body.classList.add('popupActive');
+    }
+  }
 
   const handleTopClick = () => {
     window.scrollTo({
@@ -65,22 +75,34 @@ function App() {
 
   return (
     <DarkModeProvider>
+      <AnimatedCursor
+        innerSize={18}
+        outerSize={18}
+        color='0, 0, 0'
+        outerAlpha={0.3}
+        innerScale={1}
+        outerScale={3}
+        clickables={[
+          'a',
+          'button',
+          'img',
+          'svg'
+        ]}
+      />
       <Header isResult={isResult} />
       <div className={styles.mainWrap} ref={main}>
         <Main isLoad={isLoad} />
       </div>
       {
         <LuArrowUpFromDot
-          className={`${styles.top} ${isIntersect ? styles.active : ''}`}
+          className={`${styles.top} ${isIntersect ? styles.active : ''} ${clickIdx !== null ? styles.popupActive : ''}`}
           onClick={handleTopClick} />
       }
       <Introduction />
       <Ability />
       <div className={styles.resultWrap} ref={result}>
-        <Result />
+        <Result handleClick={handleResultClick} clickIdx={clickIdx} />
       </div>
     </DarkModeProvider>
   );
 }
-
-export default App;

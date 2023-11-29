@@ -24,3 +24,7 @@
 .top:hover {
   transform: scale(1.3);
 }
+
+.top.popupActive {
+  transform: translateY(500%);
+}

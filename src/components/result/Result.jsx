@@ -4,18 +4,8 @@ import axios from 'axios';
 import { v4 as uuid4 } from 'uuid';
 import Popup from './Popup';
 
-export default function Result() {
+export default function Result({ handleClick, clickIdx }) {
   const [resultData, setResultData] = useState();
-  const [clickIdx, setClickIdx] = useState(null);
-
-  const handleClick = (idx) => {
-    setClickIdx(idx);
-    if (idx === null) {
-      document.body.classList.remove('popupActive');
-    } else {
-      document.body.classList.add('popupActive');
-    }
-  }
 
   useEffect(() => {
     axios.get('/data/project.json')

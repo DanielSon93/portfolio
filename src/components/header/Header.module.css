@@ -132,3 +132,19 @@
 .contactMe {
   font-size: 2rem;
 }
+
+.contactCardWrap {
+  position: absolute;
+  top: 70%;
+  left: -100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.contactCardWrap.contactActive {
+  opacity: 1;
+}
+
+.contactCardWrap.active {
+  left: -260%;
+}

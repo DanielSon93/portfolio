@@ -1,0 +1,30 @@
+.slides {
+  width: 50%;
+  height: 100%;
+}
+
+.slide {
+  text-align: center;
+}
+
+.slide>img {
+  width: 90%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000 !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000 !important;
+}
