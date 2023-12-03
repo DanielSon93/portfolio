@@ -74,7 +74,6 @@
 
 .about>li:hover {
   margin-right: 0.9rem;
-  color: #000000;
 }
 
 .about.active>li:nth-child(1) {
@@ -136,15 +135,11 @@
 .contactCardWrap {
   position: absolute;
   top: 70%;
-  left: -100%;
+  left: -400%;
   opacity: 0;
   transition: all 0.5s;
 }
 
 .contactCardWrap.contactActive {
   opacity: 1;
-}
-
-.contactCardWrap.active {
-  left: -260%;
 }

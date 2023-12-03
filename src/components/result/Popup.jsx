@@ -12,8 +12,6 @@ import Language from './Language';
 export default function Popup({ resultData, handleClick }) {
   const { fullNameKor, fullName, periodFull, imgUrl, languages, productionPurpose, explanation, link } = resultData[1];
 
-  console.log(fullName.includes('fraud'))
-
   return (
     <div className={styles.modalBg}>
       <div className={styles.modal}>

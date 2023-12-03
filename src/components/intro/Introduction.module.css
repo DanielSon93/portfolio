@@ -1,7 +1,7 @@
 .intro {
   width: 100%;
   height: 200vh;
-  background-color: var(--color-gray);
+  background-color: var(--color-intro);
   font-family: 'Oswald', sans-serif;
 }
 
@@ -95,6 +95,7 @@
 
 .inner {
   margin-bottom: 2rem;
+  color: var(--color-darkgray);
 }
 
 .inner>h1 {

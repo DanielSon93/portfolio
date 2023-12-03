@@ -1,8 +1,6 @@
-.mainWrap {
-  width: 100%;
-}
-
-.resultWrap {
+.mainWrap,
+.resultWrap,
+.abilityWrap {
   width: 100%;
 }
 

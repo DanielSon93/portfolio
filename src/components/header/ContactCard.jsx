@@ -6,6 +6,7 @@ export default function ContactCard({ isIntersect }) {
   return (
     <div className={`${styles.contactCard} ${isIntersect ? styles.active : ''}`}>
       <img src="/img/myImg.png" alt="" className={styles.img} />
+      <div className={styles.midLine}></div>
       <ul className={styles.info}>
         {
           Object.entries(myInfo).map(e => <li key={uuid4()}>

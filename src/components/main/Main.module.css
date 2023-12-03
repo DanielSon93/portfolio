@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   position: absolute;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .main {
@@ -147,12 +148,15 @@ strong>span:not(.dash):not(.arrow):hover {
   0% {
     transform: translateX(0%);
   }
+
   50% {
     transform: translateX(-100%);
   }
+
   50.1% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(0%);
   }
@@ -162,6 +166,7 @@ strong>span:not(.dash):not(.arrow):hover {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-200%);
   }
@@ -184,6 +189,7 @@ strong>span:not(.dash):not(.arrow):hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

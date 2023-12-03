@@ -16,11 +16,11 @@ export default function Header({ isResult }) {
 
   const handleAboutClick = (e) => {
     const text = e.target.innerText;
-    if(text === navAbout[0].title) {
+    if (text === navAbout[0].title) {
       scrollTo(1);
-    } else if(text === navAbout[1].title) {
+    } else if (text === navAbout[1].title) {
       scrollTo(3);
-    } else if(text === navAbout[2].title) {
+    } else if (text === navAbout[2].title) {
       scrollTo(4);
     }
   }
@@ -35,15 +35,17 @@ export default function Header({ isResult }) {
 
   useEffect(() => {
     document.body.addEventListener('click', (e) => {
-      if(dom !== null) {
-        if(!dom.current.contains(e.target)) setContactClick(false);
+      if (dom !== null) {
+        if (!dom.current.contains(e.target)) setContactClick(false);
       }
     })
   }, [])
 
   return (
     <header className={`${styles.header} ${isIntersect ? styles.active : ''} ${isResult ? styles.resultActive : ''}`}>
-      <div className={`${styles.logo} ${isIntersect ? styles.active : ''}`} onClick={handleLogoClick}>
+      <div
+        className={`${styles.logo} ${isIntersect ? styles.active : ''}`}
+        onClick={handleLogoClick}>
         <img src="/img/logo.png" alt="logo" />
       </div>
       <nav className={styles.nav}>

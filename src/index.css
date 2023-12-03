@@ -1,19 +1,21 @@
 :root {
-  --color-darkgray: #424053;
-  --color-gray: #8D9BA4;
-  --color-lightgray: #C4C9CD;
-  --color-darkbeige: #D9CCC3;
-  --color-beige: #E6DFD7;
-  --color-lightbeige: #F4F5F0;
+  --color-darkgray: #2E2B24;
+  --color-gray: #B6B4AF;
+  --color-lightgray: #8C8889;
+  --color-intro: #B6B4AF;
+  --color-ability: #6A6667;
+  --color-ability-card: #8C8889;
+  --color-ability-card-stroke: #B6B4AF;
 }
 
 html.darkMode {
-  --color-darkgray: #C4C9CD;
-  --color-gray: #8D9BA4;
-  --color-lightgray: #424053;
-  --color-darkbeige: #D9CCC3;
-  --color-beige: #E6DFD7;
-  --color-lightbeige: #F4F5F0;
+  --color-darkgray: #8C8889;
+  --color-gray: #B6B4AF;
+  --color-lightgray: #2E2B24;
+  --color-intro: #2E2B24;
+  --color-ability: #3F3C36;
+  --color-ability-card: #26241F;
+  --color-ability-card-stroke: #44423D;
 }
 
 body {
